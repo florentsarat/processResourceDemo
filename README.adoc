@@ -1,0 +1,292 @@
+= procResource
+Generated with Bonita
+v7.13.0, {docdate}
+:toc: left
+:toc-title: Table of contents
+:toclevels: 2
+:bonita-version: 7.13
+:imagesdir: ./documentation/images
+:icons: font
+:sectnums: numbered
+:sectanchors:
+:hardbreaks:
+:experimental:
+
+== Business Data Model
+
+image::bdm.svg[link=images/bdm.svg]
+
+=== Package com.company.model
+
+==== BusinessObject
+
+_No description available_
+
+===== icon:list[] Attributes
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Name                                          |Type  |Description
+|[[BusinessObject.persistenceId]]persistenceId*|Long  |           
+|[[BusinessObject.resource]]resource           |String|           
+|===
+
+== Applications
+
+=== My App (1.0)
+
+_No description available_
+
+[horizontal]
+Profile:: <<_1300bb05-3afe-3c2d-af8b-543b4fb16c32,icon:user[title="Profile"] User>>
+URL:: ../apps/myApp
+Home page:: <<_10b5f0f1-6b78-3bc2-b2d6-1e0a94c8481e,Overview>>
+
+==== Look and Feel
+
+[grid=cols,options="",cols="1,2",stripes=even,frame=topbot]
+|===
+|Layout|custompage_layoutBonita         
+|Theme |custompage_bootstrapdefaulttheme
+|===
+
+==== Pages
+
+===== Navigation
+
+[grid=cols,options="header",cols="2a,1",stripes=even,frame=topbot]
+|===
+|Menu   |Application Page                                  
+|My menu|<<_10b5f0f1-6b78-3bc2-b2d6-1e0a94c8481e,Overview>>
+|===
+
+== Application pages
+
+=== [[_10b5f0f1-6b78-3bc2-b2d6-1e0a94c8481e]]image:icons/page.png[] Overview
+
+Page generated with Bonita UI designer
+
+.Widgets
+[caption=,grid=cols,options="header",cols="1,2,4a",stripes=even,frame=topbot]
+|===
+|Type |Label   |Description
+|Title|        |           
+|Table|        |           
+|Input|Resource|           
+|===
+
+== Processes
+
+=== image:icons/Pool.png[title="Process"] [[_e2448eed-8c55-3edc-be08-f33330c10d9f]]PoolOther (1.1)
+
+_No description available_
+
+image::processes/PoolOther-1.1.png[]
+
+==== icon:users[] Actors
+
+[grid=cols,options="header",cols="1,3a",stripes=even,frame=topbot]
+|===
+|Name                                                                                               |Description                                                 
+|[[_4dec7d85-ac76-3c5b-88af-1e315b07d928]]Employee actor icon:play-circle[title="Process initiator"]|This is an example of actor that is mapped to any ACME users
+|===
+
+==== Instantiation form
+
+[CAUTION]
+====
+Invalid form mapping. No form specified.
+====
+
+==== image:icons/Lane.png[title="Lane"] Employee lane (<<_4dec7d85-ac76-3c5b-88af-1e315b07d928,icon:user[title="Actor"] Employee actor>>)
+
+_No description available_
+
+==== [[_63944c86-2aa6-3cf8-9546-817048f1f332]]image:icons/StartEvent.png[title="StartEvent"] Start1
+
+_No description available_
+
+===== icon:arrow-right[] Outgoing transition(s)
+
+*To <<_c65da1fd-d8f4-38cd-bf80-729b5a6e2396,Step1>>*
+
+==== [[_c65da1fd-d8f4-38cd-bf80-729b5a6e2396]]image:icons/ServiceTask.png[title="ServiceTask"] Step1
+
+_No description available_
+
+*Previous flow element(s)*: <<_63944c86-2aa6-3cf8-9546-817048f1f332,Start1>>
+
+===== icon:arrow-right[] Outgoing transition(s)
+
+*To <<_eedc325e-2d51-34ac-a0cd-5795eeb73efe,End1>>*
+
+==== [[_eedc325e-2d51-34ac-a0cd-5795eeb73efe]]image:icons/EndEvent.png[title="EndEvent"] End1
+
+_No description available_
+
+*Previous flow element(s)*: <<_c65da1fd-d8f4-38cd-bf80-729b5a6e2396,Step1>>
+
+=== image:icons/Pool.png[title="Process"] [[_56c35758-c00d-3be8-a360-ed3d1c43e7ea]]Pool (1.1)
+
+_No description available_
+
+image::processes/Pool-1.1.png[]
+
+==== icon:users[] Actors
+
+[grid=cols,options="header",cols="1,3a",stripes=even,frame=topbot]
+|===
+|Name                                                                                               |Description                                                 
+|[[_a4dd438e-105b-373c-9dde-9df9f9eb31fe]]Employee actor icon:play-circle[title="Process initiator"]|This is an example of actor that is mapped to any ACME users
+|===
+
+==== Instantiation form
+
+[CAUTION]
+====
+Invalid form mapping. No form specified.
+====
+
+==== image:icons/Lane.png[title="Lane"] Employee lane (<<_a4dd438e-105b-373c-9dde-9df9f9eb31fe,icon:user[title="Actor"] Employee actor>>)
+
+_No description available_
+
+==== [[_427dba24-b75c-3805-b7a9-f5ecbf41731b]]image:icons/StartEvent.png[title="StartEvent"] Start1
+
+_No description available_
+
+===== icon:arrow-right[] Outgoing transition(s)
+
+*To <<_f391f8c2-0013-3a48-8234-d97a00f37a20,Step1>>*
+
+==== [[_f391f8c2-0013-3a48-8234-d97a00f37a20]]image:icons/ServiceTask.png[title="ServiceTask"] Step1
+
+_No description available_
+
+*Previous flow element(s)*: <<_427dba24-b75c-3805-b7a9-f5ecbf41731b,Start1>>
+
+===== icon:arrow-right[] Outgoing transition(s)
+
+*To <<_7b8a9d9c-4a03-3efa-8b2c-36f11d91ca3a,End1>>*
+
+==== [[_7b8a9d9c-4a03-3efa-8b2c-36f11d91ca3a]]image:icons/EndEvent.png[title="EndEvent"] End1
+
+_No description available_
+
+*Previous flow element(s)*: <<_f391f8c2-0013-3a48-8234-d97a00f37a20,Step1>>
+
+=== image:icons/Pool.png[title="Process"] [[_eba70053-68e6-3c79-95f1-2c5cd3645c7c]]Pool (1.0)
+
+_No description available_
+
+image::processes/Pool-1.0.png[]
+
+==== icon:users[] Actors
+
+[grid=cols,options="header",cols="1,3a",stripes=even,frame=topbot]
+|===
+|Name                                                                                               |Description                                                 
+|[[_67eccd08-4b07-331f-aff1-cbbd111e85aa]]Employee actor icon:play-circle[title="Process initiator"]|This is an example of actor that is mapped to any ACME users
+|===
+
+==== Instantiation form
+
+[CAUTION]
+====
+Invalid form mapping. No form specified.
+====
+
+==== image:icons/Lane.png[title="Lane"] Employee lane (<<_67eccd08-4b07-331f-aff1-cbbd111e85aa,icon:user[title="Actor"] Employee actor>>)
+
+_No description available_
+
+==== [[_c332fec9-a569-3c6b-b112-ea340fdb34c9]]image:icons/StartEvent.png[title="StartEvent"] Start1
+
+_No description available_
+
+===== icon:arrow-right[] Outgoing transition(s)
+
+*To <<_0b78a02d-ec7a-30bf-85e8-b314343d8e92,Step1>>*
+
+==== [[_0b78a02d-ec7a-30bf-85e8-b314343d8e92]]image:icons/ServiceTask.png[title="ServiceTask"] Step1
+
+_No description available_
+
+*Previous flow element(s)*: <<_c332fec9-a569-3c6b-b112-ea340fdb34c9,Start1>>
+
+===== icon:arrow-right[] Outgoing transition(s)
+
+*To <<_ba9bd935-3f6c-30d8-b47b-d004f05d8cd2,End1>>*
+
+==== [[_ba9bd935-3f6c-30d8-b47b-d004f05d8cd2]]image:icons/EndEvent.png[title="EndEvent"] End1
+
+_No description available_
+
+*Previous flow element(s)*: <<_0b78a02d-ec7a-30bf-85e8-b314343d8e92,Step1>>
+
+== Diagrams
+
+=== Common (1.0)
+
+_No description available_
+
+image::diagrams/Common-1.0.png[]
+
+=== PoolAndVersion (1.0)
+
+_No description available_
+
+image::diagrams/PoolAndVersion-1.0.png[]
+
+=== PoolName (1.0)
+
+_No description available_
+
+image::diagrams/PoolName-1.0.png[]
+
+== Organization
+
+=== Groups
+
+// Uncomment this line in organization_template.tpl to display the group hierarchy diagram.
+// image::groups.svg[link=images/groups.svg]
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Path                     |Display name          |Description                                                                         
+|/acme                    |Acme                  |This group represents the acme department of the ACME organization                  
+|/acme/hr                 |Human Resources       |This group represents the human resources department of the ACME organization       
+|/acme/finance            |Finance               |This group represents the finance department of the ACME organization               
+|/acme/it                 |Infrastructure        |This group represents the infrastructure department of the ACME organization        
+|/acme/marketing          |Marketing             |This group represents the marketing department of the ACME organization             
+|/acme/production         |Production            |This group represents the production department of the ACME organization            
+|/acme/production/rd      |Research & Development|This group represents the research & development department of the ACME organization
+|/acme/production/services|Services              |This group represents the services department of the ACME organization              
+|/acme/sales              |Sales                 |This group represents the sales department of the ACME organization                 
+|/acme/sales/europe       |Europe                |This group represents the europe department of the ACME organization                
+|/acme/sales/asia         |Asia                  |This group represents the asia department of the ACME organization                  
+|/acme/sales/latin_america|Latin America         |This group represents the latin america department of the ACME organization         
+|/acme/sales/north_america|North America         |This group represents the north america department of the ACME organization         
+|===
+
+=== Roles
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Name  |Display name|Description
+|member|Member      |           
+|===
+
+=== Profiles
+
+[grid=cols,options="header",cols="1e,3a",stripes=even,frame=topbot]
+|===
+|Name                                                    |Description                                                                                                                 
+|[[_1300bb05-3afe-3c2d-af8b-543b4fb16c32]]User           |The user can view and perform tasks and can start a new case of a
+process.                                                  
+|[[_080d4ce6-9f34-37f2-a270-2edb021a60ec]]Administrator  |The administrator can install a process, manage the organization, and
+handle some errors (for example, by replaying a task).
+|[[_ec4b68ef-adbc-302e-8811-94d9a8fc9032]]Process manager|The Process manager can supervise designated processes, and manage
+cases and tasks of those processes.                      
+|===
+
